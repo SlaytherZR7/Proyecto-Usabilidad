@@ -201,3 +201,121 @@ footer {
   box-sizing: border-box;
   background-color: #fff;
 }
+
+
+/*Tarjetas*/
+.title_Eventos{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.title_Eventos h3{
+  padding-left: 10%;
+}
+
+#eventos{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.card-evento {
+  background-color: #e0e0e05e;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-evento img {
+  border-radius: 5px;
+  height: 100px;
+  width: 100px;
+}
+
+.card-evento h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.card-evento p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.card-evento button {
+  background-color: #000000;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: transform 0.3s;
+}
+
+.card-evento button:hover {
+  transform: scale(1.1);
+}
+
+
+
+@media (width < 768px) {
+  #eventos{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title_Eventos{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+}
+
+/*Tabla de posiciones*/
+
+#tabla-posiciones {
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+#tabla-posiciones th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+#tabla-posiciones th {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+#tabla-posiciones tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#tabla-posiciones tr:hover {
+  background-color: #e0e0e0;
+}
+
+
+@media only screen and (max-width: 768px) { 
+#tabla-posiciones th:nth-child(1),
+ #tabla-posiciones td:nth-child(1), 
+ #tabla-posiciones th:nth-child(4), 
+ #tabla-posiciones td:nth-child(4), 
+ #tabla-posiciones th:nth-child(5), 
+ #tabla-posiciones td:nth-child(5), 
+ #tabla-posiciones th:nth-child(6), 
+ #tabla-posiciones td:nth-child(6), 
+ #tabla-posiciones th:nth-child(7), 
+ #tabla-posiciones td:nth-child(7), 
+ #tabla-posiciones th:nth-child(8), 
+ #tabla-posiciones td:nth-child(8), 
+ #tabla-posiciones th:nth-child(9), 
+ #tabla-posiciones td:nth-child(9) { display: none; } }
