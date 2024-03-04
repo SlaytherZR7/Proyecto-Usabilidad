@@ -444,3 +444,39 @@ td {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+
+/*Tickets*/
+
+#tickets {
+  padding: 2%;
+  display: column;
+  grid-template-columns: repeat(11, 1fr);
+}
+
+#tickets h2 {
+  grid-column: 1/12;
+  margin: 10px;
+}
+
+form {
+  display: grid;
+  gap: 20px;
+}
+
+.form-group {
+  display: grid;
+  gap: 10px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-group input, .form-group select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+}

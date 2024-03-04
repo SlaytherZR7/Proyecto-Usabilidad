@@ -105,7 +105,7 @@
           </div>
           <p>Fecha del evento:</p>
           <p>20-02-2024</p>
-          <button>Comprar</button>
+          <button onclick="redirigirATickets()">Comprar</button>
         </article>
 
         <article class="card-evento">
@@ -117,7 +117,7 @@
           </div>
           <p>Fecha del evento:</p>
           <p>20-02-2024</p>
-          <button>Comprar</button>
+          <button onclick="redirigirATickets()">Comprar</button>
         </article>
 
         <article class="card-evento">
@@ -129,7 +129,7 @@
           </div>
           <p>Fecha del evento:</p>
           <p>20-02-2024</p>
-          <button>Comprar</button>
+          <button onclick="redirigirATickets()">Comprar</button>
         </article>
       </section>
       <section id="posiciones">
@@ -440,5 +440,11 @@
       </div>
       <button>Hazte Socio</button>
     </footer>
+
+    <script>
+      function redirigirATickets() {
+          window.location.href = 'tickets.html';
+      }
+  </script>
   </body>
 </html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Independiente del Valle</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://kit.fontawesome.com/3442e744c3.js" crossorigin="anonymous"></script>
+
+<body>
+    <header>
+        <span id="logotipo">
+            <img id="escudo" src="images/logo-idv.png" alt="Escudo del Independiente del Valle" />
+            <p id="titulo"><strong>Independiente del Valle</strong></p>
+        </span>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#noticias">Noticias</a></li>
+                <li><a href="#eventos">Eventos</a></li>
+                <li><a href="#tabla-posiciones">Tabla de posiciones</a></li>
+                <li><a href="#palmares">Palmarés</a></li>
+            </ul>
+        </nav>
+        <span id="login">
+            <i class="fa-solid fa-user"></i>
+            <a href="#">Ingresar</a>
+        </span>
+    </header>
+
+    <main>
+
+        <section id="tickets">
+            
+            <form action="#" method="post">
+                <h1>Compra de Tickets</h1>
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+                </div>
+                <div class="form-group">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Ingrese sus apellidos">
+                </div>
+                <div class="form-group">
+                    <label for="ci">CI/Pasaporte</label>
+                    <input type="text" id="ci" name="ci" placeholder="Ingrese su CI/Pasaporte">
+                </div>
+                <div class="form-group">
+                    <label for="num_tickets">Numero de tickets a comprar</label>
+                    <input type="number" id="num_tickets" name="num_tickets" placeholder="Ingrese la cantidad">
+                </div>
+                <div class="form-group">
+                    <label for="asistentes">Selección de asistentos</label>
+                    <select id="asistentes" name="asistentes">
+                        <option value="tribuna">Tribuna</option>
+                        <option value="palco">Palco</option>
+                        <option value="general">General</option>
+                    </select>
+                </div>
+                <h1>Pago</h1>
+                <div class="form-group">
+                    <label for="nombre_tarjeta">Nombre del propietario de la tarjeta</label>
+                    <input type="text" id="nombre_tarjeta" name="nombre_tarjeta" placeholder="Ingrese su nombre">
+                </div>
+                <div class="form-group">
+                    <label for="num_tarjeta">Numero de la tarjeta</label>
+                    <input type="text" id="num_tarjeta" name="num_tarjeta" placeholder="Ingrese el numero de tarjeta">
+                </div>
+                <div class="form-group">
+                    <label for="fecha_caducidad">Fecha de caducidad de la tarjeta</label>
+                    <input type="text" id="fecha_caducidad" name="fecha_caducidad"
+                        placeholder="Ingrese la fecha (MM/YY)">
+                </div>
+                <div class="form-group">
+                    <label for="codigo_seguridad">Codigo de Seguridad de la tarjeta</label>
+                    <input type="text" id="codigo_seguridad" name="codigo_seguridad" placeholder="Ingrese el código">
+                </div>
+                <button type="submit" class="btn">Pagar</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
